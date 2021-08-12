@@ -1,0 +1,77 @@
+谢会林:
+[图片]
+
+谢会林:
+## 1.浏览器渲染原理
+
+1.根据html构建html树
+2.根据css构建css树
+3.将两棵树合并成一棵渲染树
+4.layout布局
+5.paint绘制
+6.compose合成
+
+## 2.CSS动画的两种做法
+
+### 1.transition
+
+作用：补充中间帧
+
+语法：属性名、时长、过渡方式、延迟
+
+（可以用逗号隔开不同属性）
+
+（可以用all代表所有属性）
+
+过渡方式有：  
+
+linear 
+
+ease
+
+ease-in
+
+ease-out
+
+ease-in-out
+
+cubic-bezier
+
+step-start
+
+step-end
+
+step
+
+### 2.animation
+
+animation样式便于添加多个中间点
+
+keyframes的用法
+
+1.
+```
+@kefames slidein{
+from{
+transform:translateX(0%);}
+to{
+transform:translateX(75%);}
+}
+```
+2.
+```
+@keyframes identifier{
+0%{top:0;left:0;}
+66%{top:50px;}
+78%{top:200px;left:50px;}
+100%{top:100px;left:100px;}
+}
+```
+
+animation缩写语法：
+
+时长、过渡方式、延迟、次数、方向、填充模式、是否暂停、动画名
+
+## 其他
+
+记住老师写的固定语法，之后可以照搬进去
